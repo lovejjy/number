@@ -8,7 +8,20 @@
 </head>
 <body>
     <script>
-        
+        var body=document.body;
+        function fn(dom,a,b,c){
+            var span=document.createElement('span');
+            span.innerHTML=a;
+            var bb=document.createElement('b');
+            bb.innerHTML=b;
+            var span1=document.createElement('span');
+            c="****";
+            span1.innerHTML=c;
+            dom.appendChild(span);
+            dom.appendChild(bb);
+            dom.appendChild(span1);
+        }
+        fn(body,"1308221999","0402","5828");
     </script>
 </body>
 </html>
